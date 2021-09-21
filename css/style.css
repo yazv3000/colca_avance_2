@@ -122,7 +122,6 @@ ul{
   top: 0;
   z-index: 9;
   position: relative;
-  overflow: hidden;
 }
 
 .header-area .main-header-area {
@@ -139,6 +138,7 @@ ul{
 /* Logo */
 .header-area .main-header-area .logo-img {
   text-align: left;
+  overflow-x: hidden;
 }
 
 .header-area .main-header-area .logo-img img {
@@ -267,6 +267,106 @@ ul{
     z-index: 9;
   }
 }
+
+.slicknav_menu .slicknav_nav {
+  background: #fff;
+  float: right;
+  margin-top: 0;
+  padding: 0;
+  width: 95%;
+  padding: 0;
+  border-radius: 0px;
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 11px;
+}
+
+.slicknav_menu .slicknav_nav a:hover {
+  background: transparent;
+  color: #06596c;
+}
+
+@media (max-width: 767px) {
+  .slicknav_menu .slicknav_nav a i {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .slicknav_menu .slicknav_nav a i {
+    display: none;
+  }
+}
+
+.slicknav_menu .slicknav_nav .slicknav_btn {
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 99;
+  border: 1px solid #ddd;
+  top: 3px;
+  right: 5px;
+  top: -36px;
+}
+
+.slicknav_menu .slicknav_nav .slicknav_btn .slicknav_icon {
+  margin-right: 6px;
+  margin-top: 3px;
+  position: relative;
+  padding-bottom: 3px;
+  top: -11px;
+  right: -5px;
+}
+
+@media (max-width: 767px) {
+  .slicknav_menu {
+    margin-right: 0px;
+  }
+}
+
+
+.slicknav_nav .slicknav_arrow {
+  float: right;
+  font-size: 22px;
+  position: relative;
+  top: -9px;
+}
+
+.slicknav_btn {
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 99;
+  border: none;
+  border-radius: 3px;
+  top: 5px;
+  padding: 5px;
+  right: 5px;
+  margin-top: -5px;
+  top: -31px;
+}
+
+.slicknav_btn {
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 99;
+  border: none;
+  border-radius: 3px;
+  top: 5px;
+  padding: 5px;
+  right: 0;
+  margin-top: -5px;
+  top: -33px;
+}
+
 
 
 /* ===================================================================
@@ -1224,109 +1324,3 @@ ul{
  * ------------------------------------------------------------------- */
 
 /* line 13, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slick-nav.scss */
-.slicknav_menu .slicknav_nav {
-  background: #fff;
-  float: right;
-  margin-top: 0;
-  padding: 0;
-  width: 95%;
-  padding: 0;
-  border-radius: 0px;
-  margin-top: 5px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 11px;
-}
-
-/* line 28, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slick-nav.scss */
-.slicknav_menu .slicknav_nav a:hover {
-  background: transparent;
-  color: #06596c;
-}
-
-@media (max-width: 767px) {
-  /* line 35, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slick-nav.scss */
-  .slicknav_menu .slicknav_nav a i {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 35, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slick-nav.scss */
-  .slicknav_menu .slicknav_nav a i {
-    display: none;
-  }
-}
-
-/* line 44, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slick-nav.scss */
-.slicknav_menu .slicknav_nav .slicknav_btn {
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 10px;
-  margin-top: -40px;
-  position: relative;
-  z-index: 99;
-  border: 1px solid #ddd;
-  top: 3px;
-  right: 5px;
-  top: -36px;
-}
-
-/* line 55, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slick-nav.scss */
-.slicknav_menu .slicknav_nav .slicknav_btn .slicknav_icon {
-  margin-right: 6px;
-  margin-top: 3px;
-  position: relative;
-  padding-bottom: 3px;
-  top: -11px;
-  right: -5px;
-}
-
-@media (max-width: 767px) {
-  /* line 12, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slick-nav.scss */
-  .slicknav_menu {
-    margin-right: 0px;
-  }
-}
-
-/* line 72, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slick-nav.scss */
-.slicknav_nav .slicknav_arrow {
-  float: right;
-  font-size: 22px;
-  position: relative;
-  top: -9px;
-}
-
-/* line 78, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slick-nav.scss */
-.slicknav_btn {
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 99;
-  border: none;
-  border-radius: 3px;
-  top: 5px;
-  padding: 5px;
-  right: 5px;
-  margin-top: -5px;
-  top: -31px;
-}
-
-/* line 92, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slick-nav.scss */
-.slicknav_btn {
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 99;
-  border: none;
-  border-radius: 3px;
-  top: 5px;
-  padding: 5px;
-  right: 0;
-  margin-top: -5px;
-  top: -33px;
-}
